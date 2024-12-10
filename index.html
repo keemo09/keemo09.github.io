@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+    <title>Beispielseite</title>
+    <meta name="description" content="Beschreibungstext">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script src="https://kit.fontawesome.com/f467927d34.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                colors: {
+                    primary: '#7A1CAC', // Dark Blue
+                    secondary: '#AD49E1', // Blue
+                    accent: '#EBD3F8', // Baby Blue
+                    background: '#000000', // Midnight Blue
+                    text: '#0f0529', // White for text
+                },
+                fontFamily: {
+                    sans: ['Arial', 'sans-serif'],
+                },
+                },
+            },
+            }
+
+        document.getElementById('navbar-toggle').addEventListener('click', function() {
+        const navbar = document.getElementById('navbar-sticky');
+        navbar.classList.toggle('hidden');
+        });
+    </script>
+    <!-- Dein JavaScript-Code wird hier eingefügt -->
+</head>
+<body class="flex justify-center bg-background overflow-x-hidden">
+    <div class="w-full max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl px-5 sm:px-6 md:px-8 lg:px-10">
+        <!-- navbar -->
+        <section id="nav-bar">
+            <nav class="bg-[#1A1A1A] fixed w-full z-20 top-0 start-0 border-b border-[#433D8B]">
+                <div class="bg-[#1A1A1A] max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">{"name": "Karim Maged"}</span>
+                </a>
+                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <button id="navbar-toggle" data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                      <span class="sr-only">Open main menu</span>
+                      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                      </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-[#1A1A1A]">
+                      <li>
+                        <a href="#header" class="font-bold block py-2 px-0 text-white md:p-0">Home</a>
+                      </li>
+                      <li>
+                        <a href="#about-me" class="font-bold block py-2 px-0 text-white md:p-0">About me</a>
+                      </li>
+                      <li>
+                        <a href="#technology" class="font-bold block py-2 px-0 text-white md:p-0">Tech Stacks</a>
+                      </li>
+                      <li>
+                        <a href="#project-portfolio" class="font-bold block py-2 px-0 text-white md:p-0">Projects</a>
+                      </li>
+                      <li>
+                        <a href="#footer" class="font-bold block py-2 px-0 text-white md:p-0">Contact</a>
+                      </li>
+                      <li>
+                        <button type="button" class="md:flex text-white bg-primary hover:bg-accet focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center flex gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-[20px] h-[20px] fill-white"><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 242.7-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7 288 32zM64 352c-35.3 0-64 28.7-64 64l0 32c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-32c0-35.3-28.7-64-64-64l-101.5 0-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352 64 352zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>Download Cv</button>
+                      </li>
+                    </ul>
+                  </div>
+              </nav>
+        </section>
+        <!-- header -->
+        <section id="header" class="flex flex-col md:flex-row items-center lg:py-40 border-b border-neutral-900 lg:mb-35">
+            <div class="flex-initial w-full md:w-3/5 mb-4 lg:mb-8 md:mb-0 items-center pb-20 lg:py-40">
+                <h4 class="lg:text-2xl md:text-xl text-xl mt-20 font-bold text-secondary">Hi! Im Karim!</h4>
+                <h1 class="lg:text-5xl md:text-3xl text-4xl font-bold mb-4 lg:mb-8 text-white">(Backend)Software Developer</h1>
+                <p class="text-white lg:text-xl text-base mb-4 lg:mb-8">Passionate about backend software development, I thrive on creating innovative web applications and tackling complex challenges. Known for my attention to detail and dedication, I’m committed to building scalable, efficient solutions that help drive your company toward its goals.</p>
+                <div class="flex gap-2 mb-4 lg:mb-8">
+                    <a href="https://github.com/keemo09"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="w-[50px] h-[50px] lg:w-[60px] lg:h-[60px] text-teal-500 fill-white"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
+                    <a href="https://www.linkedin.com/in/karim-maged-345bb331a/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-[50px] h-[50px] lg:w-[60px] lg:h-[60px] text-teal-500 fill-white"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+                </div>
+                <div class="flex gap-6">
+                    <button type="button" class="text-white bg-secondary hover:bg-accet focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm lg:px-6 px-14 py-4 text-center">Download CV</button>
+                    <button type="button" class="text-white bg-primary hover:bg-accet focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm lg:px-6 px-14 py-4 text-center">Contact Me!</button>
+                </div>
+                
+            </div>
+            <div class="flex flex-initial  w-full md:w-3/5 mb-40 md:mb-0 items-center justify-center">
+                <div class="lg:w-[500px] lg:h-[500px] w-[300px] h-[300px] bg-white rounded-lg">
+                    <!--<img src="https://placehold.co/500x500/png">-->
+                    <img src="me.jpg" alt="Karim Maged" class="responsive-img transition-all duration-500 ease-in-out">
+                </div>
+            </div>
+            
+        </section>
+        <!-- About me -->
+        <section id="about-me" class="flex flex-col border-b border-neutral-900 py-20 lg:pb-40 lg:pt-10">
+            <div class="flex flex-initial items-center justify-center">
+                <h2 class="font-bold text-4xl text-white py-10 mb-10">About me</h2>
+            </div>
+            <div>
+                <p class="text-xl text-white">I am a dedicated and versatile full stack developer with a passion for building scalable, efficient, and user-centered web applications. My expertise spans a range of technologies and skills, including Python (adhering to PEP8 standards), Object-Oriented Programming (OOP), and web development frameworks like Flask and Django. I excel in API development and have strong SQL and PostgreSQL database management skills, complemented by proficiency in HTML, CSS, and containerization with Docker. Known for my analytical abilities and collaborative approach, I adapt quickly to new tools and environments. Outside of coding, I’m continuously exploring new technologies and contributing to open-source projects, driven by a commitment to delivering high-quality solutions and enhancing team success.</p>
+            </div>
+        </section>
+        <!-- Tech Stacks -->
+        <section id="technology" class="flex flex-col border-b border-neutral-900 pb-10 lg:mb-35 items-center py-10 lg:py-20">
+            <div class="flex flex-wrap gap-4 justify-center w-full">
+                <h2 class="font-bold text-4xl text-white py-10 mb-20">Tech Stacks</h2>
+            </div>
+            <div class="flex flex-col md:flex-row flex-wrap gap-8 justify-center">
+                <div class="inline-flex flex-col items-center">
+                    <p class="font-bold text-white">Python</p>
+                    <img id="tech-stack-logo" src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/python/python-original.svg" alt="alternatetext" class="h-[150px] w-[150px]">    
+                </div>
+                <div class="inline-flex flex-col items-center">
+                    <p class="font-bold text-white">Django</p>
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/django/django-plain.svg" alt="alternatetext" class="h-[150px] w-[150px]">    
+                </div>
+                <div class="inline-flex flex-col items-center">
+                    <p class="font-bold text-white">Flask</p>
+                    <img id="tech-stack-logo" src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/flask/flask-original.svg" alt="alternatetext" class="h-[150px] w-[150px]">    
+                </div>
+                <div class="inline-flex flex-col items-center">
+                    <p class="font-bold text-white">PostgreSQL</p>
+                    <img id="tech-stack-logo" src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/postgresql/postgresql-plain.svg" alt="alternatetext" class="h-[150px] w-[150px]">    
+                </div>
+                <div class="inline-flex flex-col items-center">
+                    <p class="font-bold text-white">Docker</p>
+                    <img id="tech-stack-logo" src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/docker/docker-plain.svg" alt="alternatetext" class="h-[150px] w-[150px]">    
+                </div>
+                <div class="inline-flex flex-col items-center">
+                    <p class="font-bold text-white">Git</p>
+                    <img id="tech-stack-logo" src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/git/git-original.svg" alt="alternatetext" class="h-[150px] w-[150px]">    
+                </div>
+                
+            </div>
+        </section>
+        <!-- Portfolio -->
+        <section id="project-portfolio" class="flex flex-col items-center border-b border-neutral-900 pb-10 lg:mb-35">
+            <h2 class="font-bold text-4xl text-white py-10 mb-20">My Projects</h2>
+           <!-- Project Card -->
+            <div class="flex flex-col lg:flex-row items-center mb-20 border-[1px] border-accent rounded-lg p-10 bg-secondary bg-opacity-20">
+                <div class="flex flex-col md:flex-row"> <!-- Ändere hier zu flex-col -->
+                    <div class="flex items-center md:w-1/3 mb-5 lg:mb-0">
+                        <div class="w-[300px] h-[169px] bg-white"></div>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h2 id="project-title-header" class="text-2xl font-bold text-white mb-2 lg:mb-0">Lottery API</h2>
+                        <p class="text-white mb-4 lg:mb-4">A powerful API for automated ticketing and campaign management built with Flask, Python, and PostgreSQL. TicketApp supports campaign creation, ticket purchasing, and automated prize draws using Cron jobs. Marshmallow handles data validation, and the API includes endpoints for analytics and insights on campaign performance. Designed for secure, efficient event management with scalable backend architecture.</p>
+                        <div class="flex gap-4 lg:mb-4">
+                            <button class="flex items-center gap-2 text-white bg-secondary border-[1px] border-accent rounded-lg px-4 py-1">Source Code<svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></button>
+                            <button class="flex items-center gap-2 text-white bg-secondary border-[1px] border-accent rounded-lg px-4 py-1">Live Demo<svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/></svg></button>
+                        </div>
+                        <div class="flex gap-4 mt-2">
+                            <div class="inline-flex bg-secondary rounded-lg p-1 bg-opacity-60">
+                                <p class="text-white">Python</p>
+                            </div>
+                            <div class="inline-flex bg-secondary rounded-lg p-1 bg-opacity-60">
+                                <p class="text-white">FastApi</p>
+                            </div>
+                            <div class="inline-flex bg-secondary rounded-lg p-1 bg-opacity-60">
+                                <p class="text-white">PostgreSQL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Card -->
+            <div class="flex flex-col lg:flex-row items-center mb-20 border-[1px] border-accent rounded-lg p-10 bg-secondary bg-opacity-20">
+                <div class="flex flex-col md:flex-row"> <!-- Ändere hier zu flex-col -->
+                    <div class="flex items-center md:w-1/3 mb-5 lg:mb-0">
+                        <div class="w-[300px] h-[169px] bg-white"></div>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h2 id="project-title-header" class="text-2xl font-bold text-white mb-2 lg:mb-0">MovieWebApp</h2>
+                        <p class="text-white mb-4 lg:mb-4">A Flask-powered API to manage users and their movies, built with SQLite. This API allows users to register, add movies, and retrieve movies associated with specific users. The database structure is simple, using SQLite to store user and movie information.</p>
+                        <div class="flex gap-4 lg:mb-4">
+                            <button class="flex items-center gap-2 text-white bg-secondary border-[1px] border-accent rounded-lg px-4 py-1">Source Code<svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></button>
+                            <button class="flex items-center gap-2 text-white bg-secondary border-[1px] border-accent rounded-lg px-4 py-1">Live Demo<svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/></svg></button>
+                        </div>
+                        <div class="flex gap-4 mt-2">
+                            <div class="inline-flex bg-secondary rounded-lg p-1 bg-opacity-60">
+                                <p class="text-white">Python</p>
+                            </div>
+                            <div class="inline-flex bg-secondary rounded-lg p-1 bg-opacity-60">
+                                <p class="text-white">Flask</p>
+                            </div>
+                            <div class="inline-flex bg-secondary rounded-lg p-1 bg-opacity-60">
+                                <p class="text-white">SQLite</p>
+                            </div>
+                            <div class="inline-flex bg-secondary rounded-lg p-1 bg-opacity-60">
+                                <p class="text-white">HTML&CSS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <section id="footer" class="flex flex-col items-center">
+            <div class="flex flex-col justify-center items-center md:flex-col lg:flex-row w-full gap-10 lg:gap-0">
+                <div class="w-full lg:w-1/2 p-4">
+                    <h2 class="text-white text-3xl font-bold text-center">My Socials</h2>
+                    <div class="flex flex-col mt-8">
+                        <div class="flex">
+                            <a href="https://github.com/keemo09"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="w-[50px] h-[50px] lg:w-[60px] lg:h-[60px] text-teal-500 fill-white"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
+                            <div class="flex items-center pl-5">
+                                <p class="text-white text-2xl font-bold">Github</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col mt-8">
+                        <div class="flex">
+                            <a href="https://www.linkedin.com/in/karim-maged-345bb331a/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-[50px] h-[50px] lg:w-[60px] lg:h-[60px] text-teal-500 fill-white"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+                            <div class="flex items-center pl-5">
+                                <p class="text-white text-2xl font-bold">LinkedIN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col mt-8">
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-[50px] h-[50px] lg:w-[60px] lg:h-[60px] text-teal-500 fill-white"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                            <div class="flex items-center pl-5">
+                                <p class="text-white text-2xl font-bold">magedfiverr@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <div class="p-4 mx-auto max-w-xl font-[sans-serif]">
+                        <h1 class="text-3xl text-white font-extrabold text-center">Contact me</h1>
+                        <form class="mt-8 space-y-4">
+                            <input type='text' placeholder='Name'
+                                class="w-full rounded-md py-3 px-4 text-white bg-gray-100 focus:bg-transparent text-sm outline-blue-500" />
+                            <input type='email' placeholder='Email'
+                                class="w-full rounded-md py-3 px-4 text-white bg-gray-100 focus:bg-transparent text-sm outline-blue-500" />
+                            <input type='text' placeholder='Subject'
+                                class="w-full rounded-md py-3 px-4 text-white bg-gray-100 focus:bg-transparent text-sm outline-blue-500" />
+                            <textarea placeholder='Message' rows="6"
+                                class="w-full rounded-md px-4 text-white bg-gray-100 focus:bg-transparent text-sm pt-3 outline-blue-500"></textarea>
+                            <button type='button'
+                                class="text-white bg-primary    hover:bg-blue-600 tracking-wide rounded-md text-sm px-4 py-3 w-full">Send</button>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+    <script>
+        document.getElementById('navbar-toggle').addEventListener('click', function() {
+            const navbar = document.getElementById('navbar-sticky');
+            navbar.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
